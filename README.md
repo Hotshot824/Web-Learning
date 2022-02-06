@@ -23,7 +23,7 @@
 code (4 spaces indent)
 
 
-# Outline <h1> tag
+# Outline <h1>
 * How does internet Work?
 * Web Development
 * HTML
