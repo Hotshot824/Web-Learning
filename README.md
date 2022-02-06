@@ -24,6 +24,11 @@ https://en.wikipedia.org/wiki/Main_Page
 ![](https://i.imgur.com/OjHk8dz.png)
 
 
+- [x] `https://`  **protocol** 使用何種通訊協定
+
+- [x] `en.wikipedia.org` **domain name** 連線至哪一個網域
+
+- [x] `/wiki/Main_Page` **path** 網域所能提供的 Resources
 
 
 ![](https://i.imgur.com/2ZXNkNT.png)
