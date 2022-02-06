@@ -63,7 +63,7 @@ Server 回復 200 OK 並將 Page 回傳，這樣就可以在 Browser 上呈現�
 * HyperText Transfer Protocol(HTTP) defines:
   * Messages : HTTP `request` and HTPP `response`
   * Requests : accessing resources (web pages) via `GET POST PUT DELETE` methods
-  * Responses : `2`00 OK, `3`01 Moved, `4`04 Not Found, `5`00 Server Error,etc.
+  * Responses : **2**00 OK, **3**01 Moved, **4**04 Not Found, **5**00 Server Error,etc.
 
 
 
