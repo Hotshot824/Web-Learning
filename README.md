@@ -1,5 +1,8 @@
 # HTML-Learning
 
+**學習關於HTML/CSS/JavaScript筆記**
+**主要參考清華大學Web-Programming開放課程**
+
 * How does internet Work?
 * Web Development
 * HTML
@@ -9,6 +12,13 @@
   * Links and Attributes
   * Tables
   * Forms
+
+
+**What Happened?**
+
+
+
+
 
 - [x] This is a complete item
 
