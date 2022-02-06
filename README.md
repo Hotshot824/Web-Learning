@@ -28,7 +28,7 @@ https://en.wikipedia.org/wiki/Main_Page
 
 <br>
 
-* *`https://` : **Protocol** 使用何種通訊協定
+* `https://` : **Protocol** 使用何種通訊協定
 
 * `en.wikipedia.org` : **Domain name** 連線至哪一個網域
 
