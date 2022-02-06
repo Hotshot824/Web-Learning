@@ -2,7 +2,7 @@
 
 **學習關於HTML/CSS/JavaScript筆記**
 
-**主要參考清大Web-Programming開放課程**
+**參考清大Web-Programming開放式課程**
 
 * How does internet Work?
 * Web Development
