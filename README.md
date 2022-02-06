@@ -1,6 +1,5 @@
 # HTML-Learning
 
-**How does internet Work?**
 * How does internet Work?
 * Web Development
 * HTML
