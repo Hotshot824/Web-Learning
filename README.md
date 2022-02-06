@@ -31,7 +31,9 @@ https://en.wikipedia.org/wiki/Main_Page
 * `/wiki/Main_Page` : **Path** 網域所能提供的 Resources
 
 
-當你在URL按下enter時，將發生什麼
+當你在URL按下enter時，將發生什麼？首先Domain Name拿出來詢問DNS這個Domain Name所代表的IP`(Internet Protocol)`是什麼?
+`en.wikipedia.org`是給User所使用的，如`www.wikipedia`,`fr.wikipedia`而機器所使用的則是IP Address。
+
 
 
 ![](https://i.imgur.com/2ZXNkNT.png)
