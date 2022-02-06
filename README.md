@@ -14,15 +14,19 @@
   * Tables
   * Forms
 
+<br>
 
-
+# How does internet Work?
 
 **What Happened?**
+
+當在URL按下enter，將發生什麼？
 
 https://en.wikipedia.org/wiki/Main_Page
 
 ![](https://i.imgur.com/OjHk8dz.png)
 
+<br>
 
 * *`https://` : **Protocol** 使用何種通訊協定
 
@@ -30,23 +34,41 @@ https://en.wikipedia.org/wiki/Main_Page
 
 * `/wiki/Main_Page` : **Path** 網域所能提供的 Resources
 
+<br>
 
-當在URL按下enter，將發生什麼？
+首先將Domain Name 拿出詢問 DNS 這個Domain Name所代表的 IP`(Internet Protocol)`
 
-首先Domain Name拿出來詢問DNS這個Domain Name所代表的IP`(Internet Protocol)`是什麼?
+`en.wikipedia.org` 是給 User 使用，如`www.wikipedia`代表不同語言的服務。
 
-`en.wikipedia.org` 是給 User 使用，如`www.wikipedia`,`fr.wikipedia`
+而 Machine 所使用的則是IP Address。 之後 Browser 才可以連到對應的 server 。
 
-而 Machine 所使用的則是IP Address。
+這時便可以與 Server 建立 Connection 可能是 UDP 或 TCP。  
 
-
-
+<br>
+ 
 ![](https://i.imgur.com/2ZXNkNT.png)
 
+當與 Server 連線後便可以使用 HTTP 使用 `request` 如 GET/documentart.mpe
+
+Server 回復 200 並將 Page 回傳，這樣就可以在 Browser 上呈現。
+
+這就是按下 Enter 之後到 Browser 上呈現背後所經過的流程。
+
+<br>
+
+# HTTP
+
+* A `protocol` is language spoken by machines
+  * Defines structure of messages to be exchanged
+* HyperText Transfer Protocol(HTTP) defines:
+  * Messages : HTTP `request` and HTPP `response`
+  * Requests : accessing resources (web pages) via `GET POST PUT DELETE` methods
 
 
 
-- [x] This is a complete item
+
+
+
 
 # This is an <h1> tag
 
