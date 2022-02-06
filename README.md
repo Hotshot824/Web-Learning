@@ -1,6 +1,15 @@
 # HTML-Learning
 
 **How does internet Work?**
+* How does internet Work?
+* Web Development
+* HTML
+  * "head" and "body"
+  * Block vs. lnline elements
+  * Lists
+  * Links and Attributes
+  * Tables
+  * Forms
 
 - [x] This is a complete item
 
@@ -25,13 +34,4 @@ code (4 spaces indent)
 
 # Outline <h1>
 
-* How does internet Work?
-* Web Development
-* HTML
-  * "head" and "body"
-  * Block vs. lnline elements
-  * Lists
-  * Links and Attributes
-  * Tables
-  * Forms
 
