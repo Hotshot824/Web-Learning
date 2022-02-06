@@ -24,11 +24,14 @@ https://en.wikipedia.org/wiki/Main_Page
 ![](https://i.imgur.com/OjHk8dz.png)
 
 
-- [x] `https://`  **Protocol** 使用何種通訊協定
+* *`https://` : **Protocol** 使用何種通訊協定
 
-- [x] `en.wikipedia.org` **Domain name** 連線至哪一個網域
+* `en.wikipedia.org` : **Domain name** 連線至哪一個網域
 
-- [x] `/wiki/Main_Page` **Path** 網域所能提供的 Resources
+* `/wiki/Main_Page` : **Path** 網域所能提供的 Resources
+
+
+當你在URL按下enter時，將發生什麼
 
 
 ![](https://i.imgur.com/2ZXNkNT.png)
