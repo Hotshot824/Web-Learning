@@ -23,11 +23,10 @@
 code (4 spaces indent)
 
 
-#  <h1> tag
-
-* # How does internet Work? <h1> tag
-* # Web Development <h1> tag
-* # HTML <h1> tag
+# Outline <h1> tag
+* How does internet Work?
+* Web Development
+* HTML
   * "head" and "body"
   * Block vs. lnline elements
   * Lists
