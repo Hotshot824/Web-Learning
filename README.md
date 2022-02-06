@@ -32,7 +32,7 @@ https://en.wikipedia.org/wiki/Main_Page
 
 
 當你在URL按下enter時，將發生什麼？首先Domain Name拿出來詢問DNS這個Domain Name所代表的IP`(Internet Protocol)`是什麼?
-`en.wikipedia.org`是給User所使用的，如`www.wikipedia`,`fr.wikipedia`而機器所使用的則是IP Address。
+`en.wikipedia.org`是給 User 使用的，如`www.wikipedia`,`fr.wikipedia`而 Machine 所使用的則是IP Address。
 
 
 
