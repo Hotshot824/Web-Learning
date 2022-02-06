@@ -50,7 +50,7 @@ https://en.wikipedia.org/wiki/Main_Page
 
 當與 Server 連線後便可以使用 HTTP 使用 `request` 如 GET/documentart.mpe
 
-Server 回復 200 並將 Page 回傳，這樣就可以在 Browser 上呈現。
+Server 回復 200 OK 並將 Page 回傳，這樣就可以在 Browser 上呈現。
 
 這就是按下 Enter 之後到 Browser 上呈現背後所經過的流程。
 
@@ -63,6 +63,7 @@ Server 回復 200 並將 Page 回傳，這樣就可以在 Browser 上呈現。
 * HyperText Transfer Protocol(HTTP) defines:
   * Messages : HTTP `request` and HTPP `response`
   * Requests : accessing resources (web pages) via `GET POST PUT DELETE` methods
+  * Responses : `2`00 OK, `3`01 Moved, `4`04 Not Found, `5`00 Server Error,etc.
 
 
 
