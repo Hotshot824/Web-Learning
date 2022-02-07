@@ -26,8 +26,6 @@ https://en.wikipedia.org/wiki/Main_Page
 
 ![](https://i.imgur.com/OjHk8dz.png)
 
-<br>
-
 * `https://` : **Protocol** 使用何種通訊協定
 
 * `en.wikipedia.org` : **Domain name** 連線至哪一個網域
@@ -36,23 +34,23 @@ https://en.wikipedia.org/wiki/Main_Page
 
 <br>
 
-首先將Domain Name 拿出詢問 DNS 這個Domain Name所代表的 IP`(Internet Protocol)`
+首先將Domain Name 拿出詢問 `DNS` 這個Domain Name所代表的 `IP(Internet Protocol)`
 
-`en.wikipedia.org` 是給 User 使用，如`www.wikipedia`代表不同語言的服務。
+`en.wikipedia.org` 是給 User 使用記憶，如`www.wikipedia`代表不同語言的服務。
 
-而 Machine 所使用的則是IP Address。 之後 Browser 才可以連到對應的 server 。
+而 Machine 所使用的則是 IP 之後 Browser 才可以連到對應的 Server。
 
-這時便可以與 Server 建立 Connection 可能是 UDP 或 TCP。  
+這時便可以與 Server 建立 Connection 可能是 `UDP` 或 `TCP`。  
 
 <br>
  
 ![](https://i.imgur.com/2ZXNkNT.png)
 
-當與 Server 連線後便可以使用 HTTP 使用 `request` 如 GET/documentart.mpe
+當與 Server 連線後便可以使用 HTTP `request` 如 GET/documentart.mpe
 
-Server 回復 200 OK 並將 Page 回傳，這樣就可以在 Browser 上呈現。
+Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page 內容。
 
-這就是按下 Enter 之後到 Browser 上呈現背後所經過的流程。
+這就是按下 Enter 之後到 Browser 上呈現背後所經過的過程。
 
 <br>
 
