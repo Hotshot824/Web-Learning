@@ -76,21 +76,20 @@ Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page �
 * A resource can have different `presentations`
   * HTML, XML, JSON, etc.
 
-從上面的 Example 可以看到 `start` 中 Requests GET 與 Protocol 的版本名稱，Server Respones 200 OK
+從上面的 Example 可以看到 `start` 中 Requests GET 與 Protocol 的版本名稱，Server Respones 200 OK，`Body` 則是交換的 Resources, 這些交換的 Resources 並不限定於網頁。
 
 Requests `Header`，包含自己的 `Host`，`Accept`，`Accept-Encoding` 等代表著接受的端口、檔案格式等資訊
 
 Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格式，長度等資訊
 
-Body 則是交換的 Resources, 這些交換的 Resources 並不限定於網頁。
-
 <br>
 
-# HTTP Example
+# HTTP Chrome inspect Example
 
 ![](https://i.imgur.com/E19kX8K.jpg)
 
-從 `Chrome inspect` 上我們就可以看到 HTTP 交換的 Header 與 Body，在這裡從 www.wikipedia.org 送出之後 Response 301 因此 Browser 就轉向尋找 Location，然後就轉向 en.wikipedia.org
+從 `Chrome inspect` 上我們就可以看到 HTTP 交換的 Header 與 Body，在這裡從 www.wikipedia.org 送出之後 Response 301 因此 Browser 就轉向尋找 Location，然後就轉向 en.wikipedia.org 
+然後第二次的 Requests 得到 200 的 Response，最後 Browser 上呈現的就是英文版的 wiki Node.js 頁面
 
 # This is an <h1> tag
 
