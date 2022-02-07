@@ -7,7 +7,7 @@
 * How does internet Work?
 * Web Development
 * HTML
-  * "head" and "body"
+  * head and body
   * Block vs. lnline elements
   * Lists
   * Links and Attributes
@@ -139,3 +139,48 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
   * Interactions (e.g., button, textbox, etc.)
   * A general-purpose programming language
 
+<br>
+
+# Hello-Html Example
+
+以下是一個完整的 `HTML` 格式：
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <button id = btn>Show color</button>
+    <script type = "text/javascript" src = "scripts/main.js"></script>
+</body>
+</html>
+```
+
+`<!DOCTYPE html>` 定義了以下的 Document，讓 Browser 知道以下的內容是什麼格式。
+
+`<html lang = "en">` 到 `<html>` 這兩個 tag 之間有兩個 child tag `<head>`，`<body>`
+
+`<head>` 不會呈現在 Browser 中， 其中是決定 `<body>` 中的內容怎麼呈現得更好，除了 `<title>`
+
+`<h1>...</h1>` `<p>...</p>` 是其中的內容，與結構位置。在 `HTML` 中只決定結構與內容。
+
+<br>
+
+以下是一個完整的 `CSS` 範例：
+
+```CSS
+h1 {
+    color: gray;
+    text-align: center;
+}
+```
+而 `<h1>` 的顏色，位置，字形則在 `CSS` 中定義。
+
+<br>

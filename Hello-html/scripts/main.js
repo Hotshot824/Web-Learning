@@ -15,6 +15,5 @@ function randColor() {
             return co(lor);
         }
     }
-
     return '#' + co('');
 }
