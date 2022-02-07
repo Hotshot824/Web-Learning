@@ -121,26 +121,21 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
   * Stores data
   * Sends "personalized" responses
 
+所謂的(front & back end)最簡單的分辨是你的 Code 是寫在 client 上還是 server 上。
 
-# This is an <h1> tag
+`Front end` 因此便需要處理顯示，與 User 的互動，與 requests
 
-## This is an <h2> tag
+`Back end` 處理所有的 client requests ， 或處理不同的 responses 如行動版、桌面板不同的版本。
 
-###### This is an <h6> tag
+<br>
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+## What'Inside a Web Page?
 
-- [x] This is a complete item
-- [ ] This is an incomplete item
-
-`Format one word or one line`
-
-code (4 spaces indent)
-
-
-# Outline <h1>
-
+* Hyper-Text Markup Language(**HTML**):
+  * Content and structure
+* Cascade Style Sheet (**CSS**):
+  * Style (e.g., color, font, width, height, etc.)
+* `Javascript`
+  * Interactions (e.g., button, textbox, etc.)
+  * A general-purpose programming language
 
