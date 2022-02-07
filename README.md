@@ -63,9 +63,14 @@ Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page �
   * Requests : accessing `resources` (web pages) via `GET POST PUT DELETE` methods
   * Responses : **2**00 OK, **3**01 Moved, **4**04 Not Found, **5**00 Server Error,etc.
 
+關於 [Requests](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods) 與 [Responses](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Status) 詳細的說明
+
 <br>
 
 # HTTP Messages
+
+![](https://i.imgur.com/hyVrpll.png)
+
 
 * Each HTTP message have
   * `lnital line`, `header line`, and optionally `body`
