@@ -54,7 +54,7 @@ Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page �
 
 <br>
 
-# HTTP Protocol
+## HTTP Protocol
 
 * A `protocol` is language spoken by machines
   * Defines structure of messages to be exchanged
@@ -67,7 +67,7 @@ Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page �
 
 <br>
 
-# HTTP Messages
+## HTTP Messages
 
 ![](https://i.imgur.com/hyVrpll.png)
 
@@ -84,7 +84,7 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 <br>
 
-# Chrome inspect Example
+## Chrome inspect Example
 
 ![](https://i.imgur.com/E19kX8K.jpg) 
 
@@ -94,7 +94,7 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 <br>
 
-# URI vs. URL vs. URN
+## URI vs. URL vs. URN
 
 * An Uniform Resource Identfier(URI) identifies a resource on the Internet
 * An Uniform Resource Locator(URL) is a specialized URI thad identifies a resource `by reachable location`
@@ -107,7 +107,7 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 `URI` 沒有明確定義內部的格式，`URL` 必須定義 `protocol Hostname path`，`URN` 則是以名子做為 ID 而沒有明確的位置
 
-<br><br>
+<br>
 
 # Web Development
 
@@ -120,8 +120,6 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
   * Handles requests (from multiple client)
   * Stores data
   * Sends "personalized" responses
-
-
 
 
 # This is an <h1> tag
