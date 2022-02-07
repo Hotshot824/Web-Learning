@@ -7,7 +7,7 @@
 * How does internet Work?
 * Web Development
 * HTML
-  * head and body
+  * `<head>` and `<body>`
   * Block vs. lnline elements
   * Lists
   * Links and Attributes
@@ -141,17 +141,17 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 <br>
 
-# Hello-Html Example
+## Hello-Html Example
 
-以下是一個完整的 `HTML` 格式：
+**`HTML`** ：
 
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
 </head>
 <body>
@@ -171,9 +171,11 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 `<h1>...</h1>` `<p>...</p>` 是其中的內容，與結構位置。在 `HTML` 中只決定結構與內容。
 
+`<script type = "text/javascript" src = "scripts/main.js"></script>` 最後 Load `JS` 內容。
+
 <br>
 
-以下是一個完整的 `CSS` 範例：
+**`CSS`** ：
 
 ```CSS
 h1 {
@@ -184,3 +186,31 @@ h1 {
 而 `<h1>` 的顏色，位置，字形則在 `CSS` 中定義。
 
 <br>
+
+**`Javascript`**：
+
+```Javascript
+window.onload = function() {
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", function(){
+        document.body.style.background = randColor();
+    });
+};
+```
+
+取得 `btn` 這個 document 中的 ElementId 放在 `var btn`， `btn.addEventListener` 代表所關注的事件 <br>
+`"click"`,發生時執行 `function()` 中的內容，`document.body.style.background = randColor();`<br>
+更改了 `body`，`style`，`background` 因此完成按下按鈕後的背景換色。
+
+<br>
+
+最後是 HTML `<meta>` 欄位中的所影響的是編碼模式，IE支援，寬度，viewport的縮放。
+
+![](https://i.imgur.com/UGIHsRf.jpg)
+
+以上範例說明了 `HTML`，`CSS`，`Javascript` 如何影響了 Broswer 如何呈現。
+
+<br>
+
+# HTML
+
