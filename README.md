@@ -84,15 +84,44 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 <br>
 
-# HTTP Chrome inspect Example
+# Chrome inspect Example
 
 ![](https://i.imgur.com/E19kX8K.jpg) 
 
-從 `Chrome inspect` 上我們就可以看到 HTTP 交換的 Header 與 Body，在這裡從 www.wikipedia.org 送出之後 Response 301 因此 Browser 就轉向尋找 Location，然後就轉向 en.wikipedia.org 
+從 `Chrome inspect` 上我們就可以看到 HTTP 交換的 Header，在這裡從 www.wikipedia.org 送出之後 Response 301 因此 Browser 就轉向尋找 Location，然後就轉向 en.wikipedia.org 
 
 第二次的 Requests 得到 200 的 Response，最後 Browser 上呈現的就是英文版的 wikipedia Node.js 頁面
 
 <br>
+
+# URI vs. URL vs. URN
+
+* An Uniform Resource Identfier(URI) identifies a resource on the Internet
+* An Uniform Resource Locator(URL) is a specialized URI thad identifies a resource `by reachable location`
+  * E.g., "http://...", "https://...", "ftp://..."
+  * Case sensitive
+  * Must be `URL encoded`
+    * `"http://host/hello world!"` **→** `"http://host/hello%20world%21"`
+* An Uniform Resource Name(URN) is a specialized URI that identifies a resource `by name`
+  * E.g., "urn:isbn:0451450523" 
+
+`URI` 沒有明確定義內部的格式，`URL` 必須定義 `protocol Hostname path`，`URN` 則是以名子做為 ID 而沒有明確的位置
+
+<br><br>
+
+# Web Development
+
+* To build a website that servers web pages
+* Code to be run at client side(front end):
+  * Dispalys pages
+  * Interats with user
+  * Sends additional requests
+* Code to be run at server side(back end):
+  * Handles requests (from multiple client)
+  * Stores data
+  * Sends "personalized" responses
+
+
 
 
 # This is an <h1> tag
