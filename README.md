@@ -71,11 +71,16 @@ Server `Response` 200 OK 與 Page，這樣就可以在 Browser 上呈現 Page �
 
 ![](https://i.imgur.com/hyVrpll.png)
 
-
 * Each HTTP message have
-  * `lnital line`, `header line`, and optionally `body`
+  * `start line`, `header line`, and optionally `body`
 
+從上面的 Example 可以看到 `start` 中 Requests GET 與 Protocol 的版本名稱，Server Respones 200 OK
 
+Requests `Header`，包含自己的 `Host`，`Accept`，`Accept-Encoding` 等代表著接受的端口、檔案格式等資訊
+
+Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格式，長度等資訊
+
+Body 則是交換的 Resources
 
 
 
