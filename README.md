@@ -12,7 +12,7 @@
   * Lists
   * Links and Attributes
   * Tables
-  * Forms test
+  * Forms
 
 <br>
 
