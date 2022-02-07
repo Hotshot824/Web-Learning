@@ -86,11 +86,14 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 # HTTP Chrome inspect Example
 
-![](https://i.imgur.com/E19kX8K.jpg)
+![](https://i.imgur.com/E19kX8K.jpg) 
 
 從 `Chrome inspect` 上我們就可以看到 HTTP 交換的 Header 與 Body，在這裡從 www.wikipedia.org 送出之後 Response 301 因此 Browser 就轉向尋找 Location，然後就轉向 en.wikipedia.org 
 
-第二次的 Requests 得到 200 的 Response，最後 Browser 上呈現的就是英文版的 wiki Node.js 頁面
+第二次的 Requests 得到 200 的 Response，最後 Browser 上呈現的就是英文版的 wikipedia Node.js 頁面
+
+<br>
+
 
 # This is an <h1> tag
 
