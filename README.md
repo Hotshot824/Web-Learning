@@ -145,6 +145,7 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
 <body>
@@ -234,10 +235,66 @@ window.onload = function() {
 最常見的 `Block element` 基本上就是 Heading，而 Button 就是一種 `Inline element` <br>
 在 HTML 中盡量不要使用直接改變 Visual 的方式，這部分應該交給 CSS 負責。
 
+<br>
+
 ##  [Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
 
-## Links and Attributes
+<br>
+
+## Links and Attributes 
+
+```HTML
+<link rel = "stylesheet" href="styles/main.css">
+```
+
+從 Hello-Html 的 head 中的這段其實就是一種 Attributes，
+`rel = "stylesheet" href="styles/main.css"`，設定了這個 Element 的 Attributes
+
+[Attributes](https://developer.mozilla.org/zh-TW/docs/Web/HTML/Attributes) 詳細的 Attributes 查詢
+
+簡單說明最重要的兩個 Element，Link 和 img。
+
+```HTML
+<a href = "Page2.html">Go to Page2.</a>
+<a href = "Html/Page2.html">Go to Page2.</a>
+<img src = "https://i.imgur.com/UGIHsRf.jpg">
+```
+
+Link 的使用可以使用絕對位置或相對位置。
+
+<br>
 
 ## Tables
 
+```HTML
+    <table>
+        <tr>
+            <th>Headre 1</th>
+            <th>Headre 2</th>
+        </tr>
+        <tr></tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+        </tr>
+    </table>
+```
+
+一個最簡單的 Table 範例，在 CSS 的部分講解 Style。
+
+<br>
+
 ## Forms
+
+```HTML
+<form action="http://sign-in-url" method="get">
+    <label for="acc">Username:</label>
+    <input id="acc" name = "account">
+    <label for="pw">"Password"</label>
+    <input for="pw" name = "password">
+    <button>Login</button>
+</form>
+```
