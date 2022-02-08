@@ -1,4 +1,4 @@
-# HTML-Learning
+# Web-Learning
 
 **學習關於HTML/CSS/JavaScript筆記**
 
@@ -6,13 +6,6 @@
 
 * How does internet Work?
 * Web Development
-* HTML
-  * `<head>` and `<body>`
-  * Block vs. lnline elements
-  * Lists
-  * Links and Attributes
-  * Tables
-  * Forms
 
 <br>
 
@@ -214,3 +207,37 @@ window.onload = function() {
 
 # HTML
 
+* HTML
+  * `<head>` and `<body>`
+  * Block vs. lnline elements
+  * Lists
+  * Links and Attributes
+  * Tables
+  * Forms
+
+[MDN HTML/Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+## Block vs. lnline elements
+
+```HTML
+<div>
+    <p>
+        Lorem, <b>ipsum</b> <strong>sit</strong> amet consectetur adipisicing 
+        elit. <span> Culpa ipsam pariatur distinctio. Corporis ex expedita 
+        odit, delectus sint sequi explicabo dolores possimus maxime 
+        perspiciatis, officiis omnis! Quam dolorum at minus! </span>
+    </p>
+</div>
+```
+
+`Block element` 即無論如何縮放都會占滿畫面，`Inline element` 可以想像成 `Block` 的單字 <br>
+最常見的 `Block element` 基本上就是 Heading，而 Button 就是一種 `Inline element` <br>
+在 HTML 中盡量不要使用直接改變 Visual 的方式，這部分應該交給 CSS 負責。
+
+##  [Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+
+## Links and Attributes
+
+## Tables
+
+## Forms
