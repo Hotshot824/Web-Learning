@@ -134,7 +134,7 @@ Response `Header`，則有 `Content-Type`，`Content-Length` 代表 Body 的格�
 
 <br>
 
-## Hello-Html Example
+## HTML-Example-index
 
 **`HTML`** ：
 
@@ -272,7 +272,7 @@ Link 的使用可以使用絕對位置或相對位置。
             <th>Headre 1</th>
             <th>Headre 2</th>
         </tr>
-        <tr></tr>
+        <tr>
             <td>Item 1</td>
             <td>Item 2</td>
         </tr>
@@ -287,7 +287,8 @@ Link 的使用可以使用絕對位置或相對位置。
 
 <br>
 
-## Forms
+## Forms & Form Validation
+
 
 * Queries
   * E.g., specialized presentation for current user
@@ -301,9 +302,9 @@ Link 的使用可以使用絕對位置或相對位置。
 ```HTML
 <form action="http://sign-in-url" method="get">
     <label for="acc">Username:</label>
-    <input id="acc" name = "account" placeholder="Email Address">
-    <label for="pw">Password</label>
-    <input id="pw" name = "password" placeholder="8 Digits">
+    <input id="acc" name = "account" placeholder="Email Address" type="email" required>
+    <label for="pw">Password:</label>
+    <input id="pw" name = "password" placeholder="8 Digits" type="password" required>
     <button>Login</button>
 </form>
 ```
@@ -316,7 +317,25 @@ Link 的使用可以使用絕對位置或相對位置。
 但是今天即便放在 body 中，若是有人進行監聽，依然有機會從封包中捕捉到 Password <br>
 所以這部分一般會使用 `https://` 進行加密。
 
+而在 Form 中有 Attributes 可以設定對於 Form Validation，當然這些都只是 HTML 的簡單方式，<br>
+在 Js 中可以做到更完整的方式。
 
+<br>
 
+## Assigned Reading and Reference
 
+<br>
 
+[HTML Tutorial](https://www.w3schools.com/html/) W3school 有一些 HTML 的測驗，這裡試著練習一下。
+
+[MDN](https://developer.mozilla.org/zh-TW/docs/Web/HTML) Reference。
+
+<br>
+
+## Exercise
+
+<br>
+
+最後試著完全用 HTML 完成下面一個小的測驗
+
+![](https://i.imgur.com/cD0flx2.jpg)
