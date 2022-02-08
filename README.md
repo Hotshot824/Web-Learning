@@ -289,12 +289,34 @@ Link 的使用可以使用絕對位置或相對位置。
 
 ## Forms
 
+* Queries
+  * E.g., specialized presentation for current user
+* Passing arguments
+  * E.g, user login
+
+<br>
+
+![](https://i.imgur.com/t64TMs9.jpg)
+
 ```HTML
 <form action="http://sign-in-url" method="get">
     <label for="acc">Username:</label>
-    <input id="acc" name = "account">
-    <label for="pw">"Password"</label>
-    <input for="pw" name = "password">
+    <input id="acc" name = "account" placeholder="Email Address">
+    <label for="pw">Password</label>
+    <input id="pw" name = "password" placeholder="8 Digits">
     <button>Login</button>
 </form>
 ```
+
+`http://sign-in-url/?account=Username&password=3345678`
+
+我可以發現，如果使用 GET 在這裡所有的資訊全部在 URL 中顯示，實際上真正要做 Login 的動作 <br>
+比較適合使用 POST，實際上 Requests 中除了 Header 和 start 外還有 body 的部分。 <br>
+
+但是今天即便放在 body 中，若是有人進行監聽，依然有機會從封包中捕捉到 Password <br>
+所以這部分一般會使用 `https://` 進行加密。
+
+
+
+
+

@@ -16,16 +16,14 @@
         This is a paragraph.
     </p>
     <div align = "center" style = "position:relative;top:10px">
-        <button id = btn>Show color</button>
+        <form action="http://sign-in-url" method="get">
+            <label for="acc">Username:</label>
+            <input id="acc" name = "account" placeholder="Email Address">
+            <label for="pw">Password</label>
+            <input id="pw" name = "password" placeholder="8 Digits">
+            <button>Login</button>
+        </form>
     </div>
-
-    <form action="http://sign-in-url" method="get">
-        <label for="acc">Username:</label>
-        <input id="acc" name = "account">
-        <label for="pw">"Password"</label>
-        <input for="pw" name = "password">
-        <button>Login</button>
-    </form>
     
     <script type = "text/javascript" src = "scripts/main.js"></script>
 </body>
