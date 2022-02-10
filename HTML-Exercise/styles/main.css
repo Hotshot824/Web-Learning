@@ -1,11 +1,16 @@
 h1 {
-    color: gray;
-    text-align: center;
+    color: black;
+    text-align: none;
+}
+
+#wrap{
+    display: flex;
+    justify-self: flex-start;
 }
 
 p {
     color: black;
-    text-align: center;
+    text-align: none;
 }
 
 button {

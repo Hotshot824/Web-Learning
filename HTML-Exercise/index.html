@@ -5,23 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel = "stylesheet" href="styles/main.css"> -->
+    <link rel = "stylesheet" href="styles/main.css">
 
     <title>Hello HTML!</title>
 </head>
 <body>
-    <div>
-        <div class='box'>
-            <div class='a'>This is A</div>
-            <div class='b'>This is B</div>
+    <div id="wrap">
+        <div id="div1">
+            <h1>Hello HTML</h1>
+            <h3>A Software Studio Exercise</h3>
         </div>
-        <h3>A Software Studio Exercise</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Architecto placeat vero excepturi sunt temporibus vel repellat
-            delectus eaque, modi dolores praesentium ad ipsa ratione molestias 
-            asperiores aliquid veritatis, pariatur deserunt!
-        </p>
+        <div id="div2" >
+            <br><br><br><br>
+            <form action="http://sign-in-url" method="post">
+                <label for="acc">Username:</label>
+                <input id="acc" name="account" type="email" placeholder="Email Address" required>
+                <label for="pw">Password:</label>
+                <input id="password" name="password" placeholder="8 Digits" type="password">
+                <button>Login</button>
+            </form>
+        </div>
     </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Architecto placeat vero excepturi sunt temporibus vel repellat
+        delectus eaque, modi dolores praesentium ad ipsa ratione molestias 
+        asperiores aliquid veritatis, pariatur deserunt!
+    </p>
+    <hr>
+    <form action="/action_page.php">
+        <p>Do you find this article helpful?
+            <label for="Yse">Yes</label>
+            <input type="radio" id="Yes" name="helpful?" value="Yse">
+            <label for="No">No</label>
+            <input type="radio" id="No" name="helpful?" value="No">
+        </p>
+        <label for="favor">What's you favor language?</label>
+        <select id="favor" name="favor">
+            <option value="Python">Python</option>
+            <option value="C/C++">C/C++</option>
+            <option value="Golang">Golang</option>
+            <option value="Php">Php</option>
+          </select><br><br>
+        <input type="submit" value="Submit">
+      </form>
 </body>
 </html>
