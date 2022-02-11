@@ -177,4 +177,18 @@ h1::before{
 
 <br>
 
+# Layout
+
+## Inheritance
+
+* Most style properties of an element will be **inherited** by its descendants
+  * E.g., font, color, text-align, etc.
+* Common excpetions are those related to the box model
+  * E.g., height, width, border-width, etc.
+* Check [this refrence](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit) to see if a property is inheritable.
+
+## Cascading
+
+* Final properties gotten by an element are **cascaded** from all applicable rules.
+
 
