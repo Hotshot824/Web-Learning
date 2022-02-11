@@ -72,5 +72,21 @@ body{
 ## Native Font Stack
 
 ```CSS
+body{
+  font-family:
+  /*Safari for OS X and iOS */
+  -apple-system,
+  /*Chrome >= 56 for OS X, Windows, Linux and Android */
+  system-ui,
+  /*Chrome < 56 for OX X */
+  BlinkMacSystemFont,
+  /*Windows*/
+  "Segoe UI",
+  /*Android*/
+  "Roboto"
+  /*Basic web fallback */
+  "Helvetica Neue", Arial, sans-seruf;
+}
 ```
 
+![](https://i.imgur.com/a8N5R3b.jpg)
