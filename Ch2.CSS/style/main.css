@@ -14,7 +14,24 @@ html, body{
     tarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-li{
+ul a {
+    color: red;
+}
+
+a[href="https://google.com"]{
+    color: blueviolet;
+}
+
+.done {
+    color: brown;
+}
+
+.done p{
+    color: aquamarine;
+}
+
+
+/* li{
     font-weight: bold;
 }
 #todo-list{
@@ -22,7 +39,7 @@ li{
 }
 .done {
     text-decoration: line-through;
-}
+} */
 
 /* body{
     background-image: url(../images/bg.jpg);

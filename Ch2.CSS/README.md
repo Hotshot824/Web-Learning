@@ -91,11 +91,15 @@ body{
 
 ![](https://i.imgur.com/a8N5R3b.jpg)
 
+<br>
+
 ## [Google font](https://fonts.google.com/)
 
 Google提供了許多免費字體供使用，在Page中使用link就可以在CSS中使用字體。
 
 當然增加字體是會影響Loadtime，盡量在字體使用上使用Less is more的原則。
+
+<br>
 
 # Selectors
 
@@ -124,9 +128,53 @@ li{                                   /* element/tag selector*/
 
 在CSS中如何控制selector有三種方是，上面是範例。
 
+<br>
+
 ## Chrome Inspector
 
 ![](https://i.imgur.com/JOlCDI1.jpg)
 
 在Inspector中能看到所有影響這個element的CSS Rule，並且可以在Inspector中能動態的開關這些Rule。
 並不會影響到source code。
+
+<br>
+
+## More Selector
+
+```CSS
+/* composition*/
+#todo-list, li.done {...}
+/* descendant selector*/
+li a {...}
+/* adjacent selector*/
+li.done + li {...}
+/* attribute selector*/
+a[href="http://..."] {...}
+```
+![](https://i.imgur.com/TeKrgNW.jpg)
+
+
+在CSS中選擇影響風格的對象，也可以指向特定attribute的element。
+
+<br>
+
+## Pseudo Classes & Elements
+
+```CSS
+/* pseudo class selector */
+a:hover, a:visited {...}
+ul:nth-of-type(3) {...}
+/* pseudo element selector */
+p::first-latter {
+  font-size: 200%;
+}
+h1::before{
+  content: url(image.gif);
+}
+```
+
+* More [selector examples](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+
+<br>
+
+
