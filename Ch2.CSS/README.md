@@ -177,8 +177,6 @@ h1::before{
 
 <br>
 
-# Layout
-
 ## Inheritance
 
 * Most style properties of an element will be **inherited** by its descendants
@@ -187,8 +185,80 @@ h1::before{
   * E.g., height, width, border-width, etc.
 * Check [this refrence](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit) to see if a property is inheritable.
 
+最直覺判斷是否能被繼承的判斷，如顏色，字形這種單純風格樣式的類型可被繼承，而寬高 <br>
+這些與Layout有關的則不能被繼承。
+
 ## Cascading
 
 * Final properties gotten by an element are **cascaded** from all applicable rules.
+
+```HTML
+<body>
+  <ul id="todo-list">
+      <li>...</li>
+      <li class="done">
+        TODO
+      </li>
+    </ul>
+ </body>
+```
+
+```CSS
+body{
+    background-color: black;
+    color: white;
+  }
+  #todo-list{
+    font-weight: bold;
+  }
+  #todo-list li{
+    color: red;
+  }
+  li.done{
+    color: blue;
+    text-decoration: line-throuhg;
+  }
+```
+
+![](https://i.imgur.com/5Og1eDZ.jpg)
+
+從上面的例子中其實所有的Rule都能繼承在TODO上，但我們能看到最終結果上 <br>
+`<body>`，`<#todo-list>`，`li.done`，最終是`<#todo-list>`呈現在畫面上，這就是cascading。
+
+<br>
+
+## How to Resovle Conflicts?
+
+基本上在CSS中有三種方式計算誰是最後呈現的結果。
+
+* By importance
+```CSS
+body{ 
+  color: gray !important; 
+}
+```
+加入 !important 必然使用。
+* By **specificity** 
+
+![](https://i.imgur.com/HhIgC6Q.jpg)
+
+從左往右計數，`ID Selectors`是最大的因數，只要有`ID Selectors`就必然使用 <br>
+然後是`Class`最後是`Type`，所以是 `ID` > `Class` > `Type`。
+* By source order
+  * Rule written later win
+
+最後如果同分或者是完全相同，就以編寫時的順序最後的決定。
+
+<br>
+
+# Layout
+
+## HTML Rendering
+* The content are rendered following the **normal flow**
+  * Block element are laid out vertically
+  * Inline element are laid out horizontally
+
+
+
 
 

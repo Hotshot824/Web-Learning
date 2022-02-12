@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color: black;
     font-size: 56px;
 }
@@ -28,8 +28,7 @@ a[href="https://google.com"]{
 
 .done p{
     color: aquamarine;
-}
-
+} */
 
 /* li{
     font-weight: bold;
@@ -49,3 +48,19 @@ a[href="https://google.com"]{
 /* body{
     background-size: cover;
 } */
+
+/*Cascading */
+body{
+    background-color: black;
+    color: white;
+  }
+  #todo-list{
+    font-weight: bold;
+  }
+  #todo-list li{
+    color: red;
+  }
+  li.done{
+    color: blue;
+    text-decoration: line-throuhg;
+  }
