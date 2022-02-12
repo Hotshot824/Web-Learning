@@ -223,7 +223,8 @@ body{
 ![](https://i.imgur.com/5Og1eDZ.jpg)
 
 從上面的例子中其實所有的Rule都能繼承在TODO上，但我們能看到最終結果上 <br>
-`<body>`，`<#todo-list>`，`li.done`，最終是`<#todo-list>`呈現在畫面上，這就是cascading。
+`<body>`，`<#todo-list>`，`li.done`，最終是`<#todo-list>`呈現在畫面上，這就是cascading。 <br>
+最後的`color: blue;`實際上並未發生。
 
 <br>
 
