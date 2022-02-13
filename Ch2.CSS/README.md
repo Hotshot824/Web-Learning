@@ -283,4 +283,28 @@ Content area就是內容的放置位置，然後可以看到Context外黑色的�
 
 直接在CSS中更改width，實際上更改的是content的寬度。
 
+<br>
 
+```CSS
+div{
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 24px 12px 8px 4px;
+    margin: 24px;
+}
+```
+
+![](https://i.imgur.com/5QeXOYo.jpg)
+
+![](https://i.imgur.com/GfMdHHZ.jpg)
+
+在`Chrome inspect`中能快速查看這個Box的相關資訊，並更改並不會影響到Source code。
+
+<br>
+
+## Inline and Block Element
+
+* If an inline box wraps into mulitple lines, you cannot set its width.
+  * Not the case for `<input>` and `<img>`
