@@ -259,7 +259,28 @@ body{
   * Block element are laid out vertically
   * Inline element are laid out horizontally
 
+**Normal flow**就是很直覺的依照人的閱讀習慣，從上往下，從左往右的順序**Render** <br>
+`block`的顯示方式即是佔滿一行，如下圖即便右側沒有內容也是佔滿的一行。而`Inline` <br>
+則當內容不夠了就會自動換行。
 
+<br>
 
+![](https://i.imgur.com/euDGUFR.png)
+
+<br>
+
+## Box Model
+
+* Each element is rendered as a box:
+
+![](https://i.imgur.com/2ELOwPD.jpg)
+
+絕大部分的`element`都是做為Box Render。
+
+Content area就是內容的放置位置，然後可以看到Context外黑色的部分`border`就是外框。 <br>
+而在外框和內容之間的空間則是`padding`。同樣的道理在`border`外也可以給空間，便是`margin` <br>
+做為不同element之間的空間。
+
+直接在CSS中更改width，實際上更改的是content的寬度。
 
 
