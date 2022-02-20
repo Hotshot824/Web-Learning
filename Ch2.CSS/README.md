@@ -312,7 +312,7 @@ div{
 * `<img>`is an inline element by default.
   * There is (unwanted) space between its bottom border and container.
 
-在Inline中有圖片或者是逗號，`g``,`這些字母的時候，注意尾巴的部分會超出。
+在Inline中有圖片或者是逗號，`g,`這些字母的時候，注意尾巴的部分會超出。
 
 ## Hiding Element
 
