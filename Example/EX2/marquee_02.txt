@@ -1,0 +1,11 @@
+<div id="scrollobj" style="white-space:nowrap;overflow:hidden;width:1000px; margin:0px;"><a href="#"><img src="images/scroll_01.jpg"></a><img src="images/scroll_02.jpg"><img src="images/scroll_03.jpg"><img src="images/scroll_04.jpg"><img src="images/scroll_05.jpg"></div>
+    <script language="javascript" type="text/javascript">
+<!--
+	function scroll(obj) {
+		var tmp = obj.scrollLeft++;
+		if (obj.scrollLeft==tmp)
+		 obj.innerHTML += obj.innerHTML;
+	}
+	setInterval("scroll(document.getElementById('scrollobj'))",20);
+//-->
+</script>

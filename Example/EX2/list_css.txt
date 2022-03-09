@@ -1,0 +1,13 @@
+#left ul{
+	margin:0px;
+	padding:0px;
+	
+}
+#left ul li{
+	list-style:none;
+	font-family:"·L³n¥¿¶ÂÅé";
+	color:#000000;
+	padding:6px 0px 6px 20px;
+	display:block;
+	border-bottom:#FFFFFF dashed 1px;
+}
