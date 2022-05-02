@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"fmt"
+	// "fmt"
 )
 
 func setupRouter() *gin.Engine {
@@ -11,10 +11,23 @@ func setupRouter() *gin.Engine {
 	router.LoadHTMLGlob("templates/*.html")
 
 	router.Static("/js", "./templates/js")
+	router.Static("/css", "./templates/css")
 
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"title": "Main website",
+		})
+	})
+
+	router.GET("/signup", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "sign_up.html", gin.H{
+			"title": "Sign Up",
+		})
+	})
+
+	router.GET("/signin", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "sign_in.html", gin.H{
+			"title": "Sign Ip",
 		})
 	})
 
