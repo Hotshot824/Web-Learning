@@ -54,7 +54,9 @@ func setupRouter() *gin.Engine {
     return router
 }
 
+
+
 func main() {
     router := setupRouter()
-    router.Run(":8000") // default localhost:8000
+    router.Run(":8080") // default localhost:8000
 }
