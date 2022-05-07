@@ -6,6 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"net/http"
+	// "fmt"
 )
 
 func checkErr(err error) {
@@ -47,22 +48,24 @@ func setupRouter() *gin.Engine {
 		nickname := c.PostForm("nickname")
 		address := c.PostForm("address")
 		address2 := c.PostForm("address2")
-		city := c.PostForm("city")
 		state := c.PostForm("state")
+		city := c.PostForm("city")
 		zip := c.PostForm("zip")
 
 		db, err := sql.Open("mysql", "cs-benson:0824@tcp(127.0.0.1:3306)/login_example")
 		checkErr(err)
 
 		// Insert data to Table User_info
-		stmt, err := db.Prepare("INSERT INTO User_info SET Email=?, Password=?, Firstname=?, Lastname=?, Nickname=?")
+		stmt, err := db.Prepare("INSERT User_info SET Email=?, Password=?, Firstname=?, Lastname=?, Nickname=?")
 		checkErr(err)
 		res, err := stmt.Exec(email, password, firstname, lastname, nickname)
 		checkErr(err)
 		uid, err := res.LastInsertId()
+		checkErr(err)
 
 		// Insert data to Table User_detail
-		stmt, err = db.Prepare("INSERT INTO User_detail SET Uid=?, Address=?, Address2=?, State=?, City=?, Zip=?")
+		stmt, err = db.Prepare("INSERT User_detail SET Uid=?, Address=?, Address2=?, State=?, City=?, Zip=?")
+		checkErr(err)
 		_, err = stmt.Exec(uid, address, address2, state, city, zip)
 		checkErr(err)
 
