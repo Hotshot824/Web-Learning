@@ -82,7 +82,7 @@ func setupRouter() *gin.Engine {
 		exists := EmailExists(db, email)
 		if exists {
 			c.JSON(200, gin.H{
-				"email": "exists",
+				"message": "This email is already registered!",
 			})
 		} else {
 			// Insert data to Table User_info
