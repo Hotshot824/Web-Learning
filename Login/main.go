@@ -1,22 +1,40 @@
 package main
 
 import (
+	"database/sql"
+
 	_ "github.com/go-sql-driver/mysql"
-    "database/sql"
+
+	// "fmt"
+	"log"
+	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"net/http"
-	// "fmt"
 )
 
 func checkErr(err error) {
-    if err != nil {
-        panic(err)
-    }
+	if err != nil {
+		panic(err)
+	}
+}
+
+func EmailExists(db *sql.DB, email string) bool {
+	sqlStmt := `SELECT Email FROM User_info WHERE Email = ?`
+	err := db.QueryRow(sqlStmt, email).Scan(&email)
+	if err != nil {
+		if err != sql.ErrNoRows {
+			// a real error happened! you should change your function return
+			// to "(bool, error)" and return "false, err" here
+			log.Print(err)
+		}
+		return false
+	}
+
+	return true
 }
 
 func setupRouter() *gin.Engine {
-    router := gin.Default()
+	router := gin.Default()
 	router.LoadHTMLGlob("templates/*.html")
 
 	router.Static("/js", "./templates/js")
@@ -25,6 +43,12 @@ func setupRouter() *gin.Engine {
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"title": "Main website",
+		})
+	})
+
+	router.POST("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
 		})
 	})
 
@@ -55,33 +79,37 @@ func setupRouter() *gin.Engine {
 		db, err := sql.Open("mysql", "cs-benson:0824@tcp(127.0.0.1:3306)/login_example")
 		checkErr(err)
 
-		// Insert data to Table User_info
-		stmt, err := db.Prepare("INSERT User_info SET Email=?, Password=?, Firstname=?, Lastname=?, Nickname=?")
-		checkErr(err)
-		res, err := stmt.Exec(email, password, firstname, lastname, nickname)
-		checkErr(err)
-		uid, err := res.LastInsertId()
-		checkErr(err)
+		exists := EmailExists(db, email)
+		if exists {
+			c.JSON(200, gin.H{
+				"email": "exists",
+			})
+		} else {
+			// Insert data to Table User_info
+			stmt, err := db.Prepare("INSERT User_info SET Email=?, Password=?, Firstname=?, Lastname=?, Nickname=?")
+			checkErr(err)
+			res, err := stmt.Exec(email, password, firstname, lastname, nickname)
+			checkErr(err)
+			uid, err := res.LastInsertId()
+			checkErr(err)
 
-		// Insert data to Table User_detail
-		stmt, err = db.Prepare("INSERT User_detail SET Uid=?, Address=?, Address2=?, State=?, City=?, Zip=?")
-		checkErr(err)
-		_, err = stmt.Exec(uid, address, address2, state, city, zip)
-		checkErr(err)
+			// Insert data to Table User_detail
+			stmt, err = db.Prepare("INSERT User_detail SET Uid=?, Address=?, Address2=?, State=?, City=?, Zip=?")
+			checkErr(err)
+			_, err = stmt.Exec(uid, address, address2, state, city, zip)
+			checkErr(err)
+		}
 
 		db.Close()
 	})
 
-    return router
+	return router
 }
-
-
 
 func main() {
-    router := setupRouter()
-    router.Run(":8080") // default localhost:8000
+	router := setupRouter()
+	router.Run(":8080") // Default localhost:8080
 }
-
 
 // func main() {
 //     db, err := sql.Open("mysql", "cs-benson:0824@tcp(127.0.0.1:3306)/login_example")

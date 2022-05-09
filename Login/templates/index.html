@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-witdh, inital-scale=1, shrink-to-fit=no">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -18,8 +18,29 @@
         <div class="row justify-content-center">
             <a href="signup" class="link-success text-light bg-dark py-1 px-2 mx-1">Sign Up</a>
             <a href="signin" class="link-success text-light bg-dark py-1 px-2 mx-1">Sign In</a>
+            <button class="btn btn-success" id="checkbtn">Check Button</button>
         </div>
     </div>
+
+    <script>
+        document.querySelector("#checkbtn").addEventListener("click", function () {
+            console.log("function called check button");
+
+            fetch("ping", {
+                method: "POST",
+            })
+                .then((response) => {
+                    return response.json();
+                })
+                .then((response) => {
+                    alert(JSON.stringify(response))
+                    console.log(response);
+                })
+                .catch((error) => {
+                    console.log(`Error: ${error}`);
+                })
+        }, false);
+    </script>
 </body>
 
 </html>

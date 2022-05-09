@@ -7,31 +7,41 @@ window.onload = function () {
     obj.options.add(new Option("Thailand", "thailand"))
     obj.options.add(new Option("Korean", "korean"))
     obj.options.add(new Option("HongKong", "hongkong"))
-    obj.options.add(new Option("AAAA", "AAAA"))
+    obj.options.add(new Option("USA", "USA"))
 }
 
 document.querySelector("#signup").addEventListener("submit", function (e) {
     console.log("function called send formData");
     e.preventDefault()
 
-    alert("Data has been send");
+    // alert("Data has been send");
     let form = new FormData(document.querySelector('form'));
     fetch("sign_up", {
         method: "POST",
         body: form
-    });
+    })
+        .then((response) => {
+            return response.json();
+        })
+        .then((response) => {
+            alert(JSON.stringify(response))
+            console.log(response);
+        })
+        .catch((error) => {
+            console.log(`Error: ${error}`);
+        })
     window.location.reload();
 }, false);
 
-document.querySelector("#signin").addEventListener("submit", function (e) {
-    console.log("function called send formData");
-    e.preventDefault()
+// document.querySelector("#signin").addEventListener("submit", function (e) {
+//     console.log("function called send formData");
+//     e.preventDefault()
 
-    alert("Data has been send");
-    let form = new FormData(document.querySelector('form'));
-    fetch("sign_in", {
-        method: "POST",
-        body: form
-    });
-    window.location.reload();
-}, false);
+//     alert("Data has been send");
+//     let form = new FormData(document.querySelector('form'));
+//     fetch("sign_in", {
+//         method: "POST",
+//         body: form
+//     });
+//     window.location.reload();
+// }, false);
